@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/aes.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="contenedor1">
+        <h5>Codificar</h5>
+        <a href="index.html"><input type="button" value="Inicio"></a>
+        <br>
+        <br>
+        <form action="#">
+            <label>
+            <label>Ingresa la clave</label>
+            <input type="text" id="clave" maxlength="32">
+            <br>
+                <input class="with-gap" type="radio" id="128bt" name="nbit" value="128">128 bits
+            </label>
+            <label>
+                <input class="with-gap" type="radio" id="192bt" name="nbit" value="192"/>192 bits
+            </label>
+            <label>
+                <input class="with-gap" type="radio" id="256bt" name="nbit" value="256"/>256 bits
+            </label>
+            <input type="file" id="archivo">
+            <textarea id="res" placeHolder="resultado"></textarea>
+            <br>
+            <input class="boton" type="button" id="Cifrar" value="cifrar" onclick="cifrado();">
+        </form>
+    </div>
+    <script src="js/cifrar.js"></script>
+</body>
+</html>

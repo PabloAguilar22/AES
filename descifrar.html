@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>des</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <br>
+        <a href="index.html"><input type="button" value="Inicio"></a>
+        <input type="file" id="archivo" value="seleccione archivo" />
+        <br>
+        <input type="text" id="clave" placeHolder="clave" />
+        <br>
+        
+        <label for="bits"><input type="radio" name="bits" id="128" value="128" />128</label>
+        <label for="bits"><input type="radio" name="bits" id="192" value="192" />192</label>
+        
+        <label for="bits"><input type="radio" name="bits" id="256" value="256" /> 256</label>
+        <br>
+        <textarea id="res" placeHolder="resultado"></textarea>
+        <br>
+        <input type="button" id="descifrar" value="decodificar"/>
+        <br>
+    </div>
+    <script src="js/descifrar.js"></script>
+</body>
+</html>
